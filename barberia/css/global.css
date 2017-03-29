@@ -1,0 +1,357 @@
+body, div, section, img, ul, h1, p { margin: 0px; border: none; padding: 0px; display: inline-block; box-sizing: border-box; }
+
+@font-face { font-family: "Bahania"; font-style: normal; font-weight: 400; src: url("../assets/fonts/bahiana-latin.woff2") format("woff2"); }
+
+@font-face { font-family: "Bahania"; font-style: normal; font-weight: 400; src: url("../assets/fonts/bahiana-latin-ext.woff2") format("woff2"); }
+
+html, body { z-index: 1; overflow: hidden; }
+
+html section, body section { position: relative; max-width: 1440px; background-color: #000; width: 100%; height: 100%; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+
+html section.main div.top, html section.main div.bottom, body section.main div.top, body section.main div.bottom { z-index: 2; max-width: 1440px; width: 100%; height: 100%; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+html section.main div.top div, html section.main div.bottom div, body section.main div.top div, body section.main div.bottom div { box-shadow: 0px 0px 200px 200px rgba(0, 0, 0, 0.7) inset; cursor: pointer; height: auto; width: 100%; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; background-position: center; }
+
+html section.main div.top div h1, html section.main div.bottom div h1, body section.main div.top div h1, body section.main div.bottom div h1 { font-size: 5em; font-family: "Bahania"; display: -webkit-flex; display: -ms-flexbox; display: flex; color: #fff; }
+
+html section.main div.top div p, html section.main div.bottom div p, body section.main div.top div p, body section.main div.bottom div p { display: inline-block; font-family: "Lato"; display: -webkit-flex; display: -ms-flexbox; display: flex; color: #fff; font-size: 1.5em; }
+
+html section.main div.top div.img1, html section.main div.bottom div.img1, body section.main div.top div.img1, body section.main div.bottom div.img1 { background-image: url("../assets/images/demo/main-1.jpg"); }
+
+html section.main div.top div.img1 h1, html section.main div.bottom div.img1 h1, body section.main div.top div.img1 h1, body section.main div.bottom div.img1 h1 { margin: 3% 0% 0% 3%; }
+
+html section.main div.top div.img1 p, html section.main div.bottom div.img1 p, body section.main div.top div.img1 p, body section.main div.bottom div.img1 p { margin: 0% 0% 0% 3%; }
+
+html section.main div.top div.img2, html section.main div.bottom div.img2, body section.main div.top div.img2, body section.main div.bottom div.img2 { background-image: url("../assets/images/demo/main-2.jpg"); -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; }
+
+html section.main div.top div.img2 h1, html section.main div.bottom div.img2 h1, body section.main div.top div.img2 h1, body section.main div.bottom div.img2 h1 { margin: 3% 3% 0% 0%; }
+
+html section.main div.top div.img2 p, html section.main div.bottom div.img2 p, body section.main div.top div.img2 p, body section.main div.bottom div.img2 p { margin: 0% 3% 0% 0%; }
+
+html section.main div.top div.img3, html section.main div.bottom div.img3, body section.main div.top div.img3, body section.main div.bottom div.img3 { background-image: url("../assets/images/demo/main-3.jpg"); -webkit-flex-direction: column-reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+
+html section.main div.top div.img3 h1, html section.main div.bottom div.img3 h1, body section.main div.top div.img3 h1, body section.main div.bottom div.img3 h1 { margin: 0% 0% 3% 3%; }
+
+html section.main div.top div.img3 p, html section.main div.bottom div.img3 p, body section.main div.top div.img3 p, body section.main div.bottom div.img3 p { margin: 0% 0% 0% 3%; }
+
+html section.main div.top div.img4, html section.main div.bottom div.img4, body section.main div.top div.img4, body section.main div.bottom div.img4 { background-image: url("../assets/images/demo/main-4.jpg"); -webkit-flex-direction: column-reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; }
+
+html section.main div.top div.img4 h1, html section.main div.bottom div.img4 h1, body section.main div.top div.img4 h1, body section.main div.bottom div.img4 h1 { margin: 0% 3% 3% 0%; }
+
+html section.main div.top div.img4 p, html section.main div.bottom div.img4 p, body section.main div.top div.img4 p, body section.main div.bottom div.img4 p { margin: 0% 3% 0% 0%; }
+
+html section.main aside, body section.main aside { width: 100%; height: 100%; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; position: absolute; top: 0%; }
+
+html section.main aside figure, body section.main aside figure { z-index: 3; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 35%; margin: 0 auto; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+html section.main aside figure img, body section.main aside figure img { border-radius: 50% 40% 50% 50%; height: auto; width: 100%; }
+
+@media screen and (max-width: 468px) and (orientation: portrait) { html section.main div.top div h1, html section.main div.bottom div h1, body section.main div.top div h1, body section.main div.bottom div h1 { font-size: 2em; }
+  html section.main div.top div p, html section.main div.bottom div p, body section.main div.top div p, body section.main div.bottom div p { font-size: .8em; }
+  html section.main aside figure, body section.main aside figure { width: 65%; } }
+
+@media screen and (max-width: 736px) and (orientation: landscape) { html section.main div.top div h1, html section.main div.bottom div h1, body section.main div.top div h1, body section.main div.bottom div h1 { font-size: 2em; }
+  html section.main div.top div p, html section.main div.bottom div p, body section.main div.top div p, body section.main div.bottom div p { font-size: .8em; }
+  html section.main aside figure, body section.main aside figure { width: 40%; } }
+
+html section.us, body section.us { -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+
+html section.us div, body section.us div { display: -webkit-flex; display: -ms-flexbox; display: flex; height: 100%; }
+
+html section.us div.container-left, body section.us div.container-left { max-width: 49.4%; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+
+html section.us div.container-left h1, body section.us div.container-left h1 { font-size: 5em; font-family: "Bahania"; display: -webkit-flex; display: -ms-flexbox; display: flex; color: #fff; margin: 7% 0% 0% 0%; }
+
+html section.us div.container-left h1.mobile-menu, body section.us div.container-left h1.mobile-menu { display: none; }
+
+html section.us div.container-left div, body section.us div.container-left div { color: #fff; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; height: 65%; }
+
+html section.us div.container-left div p.history, body section.us div.container-left div p.history { text-align: justify; font-family: "Lato"; font-weight: 100; font-size: 20px; width: 70%; /* Ellipsis multiline*/ display: -webkit-box; max-width: 70%; line-height: 1.25; -webkit-line-clamp: 20; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; margin-bottom: 5%; }
+
+html section.us div.container-left div div, body section.us div.container-left div div { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-content: flex-start; -ms-flex-line-pack: start; align-content: flex-start; width: 35%; height: auto; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+html section.us div.container-left div div p, body section.us div.container-left div div p { display: -webkit-flex; display: -ms-flexbox; display: flex; font-family: "Lato"; font-weight: 100; font-size: 1.2em; }
+
+html section.us div.container-right, body section.us div.container-right { width: 50%; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+html section.us div.container-right h1, body section.us div.container-right h1 { color: #fff; font-family: "Bahania"; }
+
+html section.us div.container-right h1.mobile-menu, body section.us div.container-right h1.mobile-menu { display: none; }
+
+html section.us div.container-right div, body section.us div.container-right div { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; }
+
+html section.us div.container-right div.atention, body section.us div.container-right div.atention { margin-top: 7%; }
+
+html section.us div.container-right div.atention, html section.us div.container-right div.services, html section.us div.container-right div.products, body section.us div.container-right div.atention, body section.us div.container-right div.services, body section.us div.container-right div.products { height: 20%; color: #fff; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+html section.us div.container-right div.atention h1, html section.us div.container-right div.services h1, html section.us div.container-right div.products h1, body section.us div.container-right div.atention h1, body section.us div.container-right div.services h1, body section.us div.container-right div.products h1 { display: -webkit-flex; display: -ms-flexbox; display: flex; font-family: "Bahania"; font-size: 3em; }
+
+html section.us div.container-right div.atention div, html section.us div.container-right div.services div, html section.us div.container-right div.products div, body section.us div.container-right div.atention div, body section.us div.container-right div.services div, body section.us div.container-right div.products div { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-content: flex-start; -ms-flex-line-pack: start; align-content: flex-start; width: 45%; height: auto; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+html section.us div.container-right div.atention div p, html section.us div.container-right div.services div p, html section.us div.container-right div.products div p, body section.us div.container-right div.atention div p, body section.us div.container-right div.services div p, body section.us div.container-right div.products div p { display: -webkit-flex; display: -ms-flexbox; display: flex; font-family: "Lato"; font-weight: 100; font-size: 1.2em; }
+
+html section.us div.container-right div.services, body section.us div.container-right div.services { height: 25%; -webkit-justify-content: normal; -ms-flex-pack: normal; justify-content: normal; }
+
+html section.us div.container-right div.services div.time, body section.us div.container-right div.services div.time { -webkit-justify-content: left; -ms-flex-pack: left; justify-content: left; }
+
+html section.us div.container-right div.services div.time span, body section.us div.container-right div.services div.time span { font-size: 1.1em; margin: 0% 3% 0% 6%; }
+
+html section.us div.container-right div.services div.time p, body section.us div.container-right div.services div.time p { font-size: 1em; }
+
+@media screen and (max-width: 468px) and (orientation: portrait) { html section.us, body section.us { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+  html section.us div.container-left, html section.us div.container-right, body section.us div.container-left, body section.us div.container-right { width: 100%; max-width: 100%; }
+  html section.us div.container-left, body section.us div.container-left { -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
+  html section.us div.container-left h1, body section.us div.container-left h1 { font-size: 3em; display: none; }
+  html section.us div.container-left h1.mobile-menu, body section.us div.container-left h1.mobile-menu { display: -webkit-flex; display: -ms-flexbox; display: flex; }
+  html section.us div.container-left div, body section.us div.container-left div { display: none; }
+  html section.us div.container-left div p.history, body section.us div.container-left div p.history { overflow-y: auto; height: 60%; font-weight: normal; }
+  html section.us div.container-left div div, body section.us div.container-left div div { width: 70%; }
+  html section.us div.container-left div div p, body section.us div.container-left div div p { font-weight: normal; font-size: 1em; }
+  html section.us div.container-left div div a, body section.us div.container-left div div a { text-decoration: none; color: #fff; }
+  html section.us div.container-right h1.mobile-menu, body section.us div.container-right h1.mobile-menu { display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 3em; }
+  html section.us div.container-right div.atention h1, html section.us div.container-right div.services h1, html section.us div.container-right div.products h1, body section.us div.container-right div.atention h1, body section.us div.container-right div.services h1, body section.us div.container-right div.products h1 { font-size: 2em; display: none; }
+  html section.us div.container-right div.atention div, html section.us div.container-right div.services div, html section.us div.container-right div.products div, body section.us div.container-right div.atention div, body section.us div.container-right div.services div, body section.us div.container-right div.products div { width: 75%; display: none; }
+  html section.us div.container-right div.atention div p, html section.us div.container-right div.services div p, html section.us div.container-right div.products div p, body section.us div.container-right div.atention div p, body section.us div.container-right div.services div p, body section.us div.container-right div.products div p { font-weight: normal; font-size: 1em; }
+  html section.us div.container-right div.services, html section.us div.container-right div.products, body section.us div.container-right div.services, body section.us div.container-right div.products { height: 30%; }
+  html section.us div#large, body section.us div#large { height: 85%; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+  html section.us div#short, body section.us div#short { height: 14.5%; } }
+
+@media screen and (max-width: 736px) and (orientation: landscape) { html section.us, body section.us { -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+  html section.us div.container-left, html section.us div.container-right, body section.us div.container-left, body section.us div.container-right { width: 100%; max-width: 100%; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+  html section.us div.container-left h1, body section.us div.container-left h1 { font-size: 3em; }
+  html section.us div.container-left div p.history, body section.us div.container-left div p.history { overflow-y: auto; height: 65%; max-width: 80%; width: 80%; font-weight: normal; }
+  html section.us div.container-left div div, body section.us div.container-left div div { width: 70%; }
+  html section.us div.container-left div div p, body section.us div.container-left div div p { font-weight: normal; font-size: 1em; }
+  html section.us div.container-left div div a, body section.us div.container-left div div a { text-decoration: none; color: #fff; }
+  html section.us div.container-right div.atention, html section.us div.container-right div.services, html section.us div.container-right div.products, body section.us div.container-right div.atention, body section.us div.container-right div.services, body section.us div.container-right div.products { margin: 0; }
+  html section.us div.container-right div.atention h1, html section.us div.container-right div.services h1, html section.us div.container-right div.products h1, body section.us div.container-right div.atention h1, body section.us div.container-right div.services h1, body section.us div.container-right div.products h1 { font-size: 1.5em; }
+  html section.us div.container-right div.atention div, html section.us div.container-right div.services div, html section.us div.container-right div.products div, body section.us div.container-right div.atention div, body section.us div.container-right div.services div, body section.us div.container-right div.products div { width: 75%; }
+  html section.us div.container-right div.atention div p, html section.us div.container-right div.services div p, html section.us div.container-right div.products div p, body section.us div.container-right div.atention div p, body section.us div.container-right div.services div p, body section.us div.container-right div.products div p { font-weight: normal; font-size: .8em; }
+  html section.us div.container-right div.atention div.time span, html section.us div.container-right div.services div.time span, html section.us div.container-right div.products div.time span, body section.us div.container-right div.atention div.time span, body section.us div.container-right div.services div.time span, body section.us div.container-right div.products div.time span { font-size: .9em; }
+  html section.us div.container-right div.atention div.time p, html section.us div.container-right div.services div.time p, html section.us div.container-right div.products div.time p, body section.us div.container-right div.atention div.time p, body section.us div.container-right div.services div.time p, body section.us div.container-right div.products div.time p { font-size: .8em; }
+  html section.us div.container-right div.services, html section.us div.container-right div.products, body section.us div.container-right div.services, body section.us div.container-right div.products { height: 30%; } }
+
+@media screen and (max-width: 1024px) and (orientation: portrait) { html section.us, body section.us { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+  html section.us div.container-left, html section.us div.container-right, body section.us div.container-left, body section.us div.container-right { width: 100%; max-width: 100%; }
+  html section.us div.container-left, body section.us div.container-left { -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
+  html section.us div.container-left h1, body section.us div.container-left h1 { font-size: 5em; display: none; margin: 0; }
+  html section.us div.container-left h1.mobile-menu, body section.us div.container-left h1.mobile-menu { display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 8em; }
+  html section.us div.container-left div, body section.us div.container-left div { display: none; }
+  html section.us div.container-left div p.history, body section.us div.container-left div p.history { overflow-y: auto; height: 60%; font-weight: normal; font-size: 2em; }
+  html section.us div.container-left div div, body section.us div.container-left div div { width: 70%; }
+  html section.us div.container-left div div p, body section.us div.container-left div div p { font-weight: normal; font-size: 2em; }
+  html section.us div.container-left div div a, body section.us div.container-left div div a { text-decoration: none; color: #fff; }
+  html section.us div.container-right h1.mobile-menu, body section.us div.container-right h1.mobile-menu { display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 8em; }
+  html section.us div.container-right div.atention, html section.us div.container-right div.services, html section.us div.container-right div.products, body section.us div.container-right div.atention, body section.us div.container-right div.services, body section.us div.container-right div.products { margin: 0; }
+  html section.us div.container-right div.atention h1, html section.us div.container-right div.services h1, html section.us div.container-right div.products h1, body section.us div.container-right div.atention h1, body section.us div.container-right div.services h1, body section.us div.container-right div.products h1 { font-size: 4.2em; display: none; }
+  html section.us div.container-right div.atention div, html section.us div.container-right div.services div, html section.us div.container-right div.products div, body section.us div.container-right div.atention div, body section.us div.container-right div.services div, body section.us div.container-right div.products div { width: 75%; display: none; }
+  html section.us div.container-right div.atention div p, html section.us div.container-right div.services div p, html section.us div.container-right div.products div p, body section.us div.container-right div.atention div p, body section.us div.container-right div.services div p, body section.us div.container-right div.products div p { font-weight: normal; font-size: 2em; }
+  html section.us div.container-right div.atention div.time span, html section.us div.container-right div.services div.time span, html section.us div.container-right div.products div.time span, body section.us div.container-right div.atention div.time span, body section.us div.container-right div.services div.time span, body section.us div.container-right div.products div.time span { font-size: 1.6em; }
+  html section.us div.container-right div.atention div.time p, html section.us div.container-right div.services div.time p, html section.us div.container-right div.products div.time p, body section.us div.container-right div.atention div.time p, body section.us div.container-right div.services div.time p, body section.us div.container-right div.products div.time p { font-size: 2em; }
+  html section.us div.container-right div.services, html section.us div.container-right div.products, body section.us div.container-right div.services, body section.us div.container-right div.products { height: 30%; }
+  html section.us div#large, body section.us div#large { height: 80%; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+  html section.us div#short, body section.us div#short { height: 20.5%; } }
+
+@media screen and (min-width: 768px) and (orientation: landscape) { html section.us, body section.us { -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+  html section.us div.container-left, html section.us div.container-right, body section.us div.container-left, body section.us div.container-right { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+  html section.us div.container-left h1, body section.us div.container-left h1 { font-size: 4.5em; }
+  html section.us div.container-left div p.history, body section.us div.container-left div p.history { overflow-y: auto; height: 65%; max-width: 80%; width: 80%; font-weight: normal; font-size: 1.7em; }
+  html section.us div.container-left div div, body section.us div.container-left div div { width: 80%; }
+  html section.us div.container-left div div p, body section.us div.container-left div div p { font-weight: normal; font-size: 2em; }
+  html section.us div.container-left div div a, body section.us div.container-left div div a { text-decoration: none; color: #fff; font-size: 2em; }
+  html section.us div.container-right div.atention, html section.us div.container-right div.services, html section.us div.container-right div.products, body section.us div.container-right div.atention, body section.us div.container-right div.services, body section.us div.container-right div.products { margin: 0; }
+  html section.us div.container-right div.atention h1, html section.us div.container-right div.services h1, html section.us div.container-right div.products h1, body section.us div.container-right div.atention h1, body section.us div.container-right div.services h1, body section.us div.container-right div.products h1 { font-size: 4em; }
+  html section.us div.container-right div.atention div, html section.us div.container-right div.services div, html section.us div.container-right div.products div, body section.us div.container-right div.atention div, body section.us div.container-right div.services div, body section.us div.container-right div.products div { width: 75%; }
+  html section.us div.container-right div.atention div p, html section.us div.container-right div.services div p, html section.us div.container-right div.products div p, body section.us div.container-right div.atention div p, body section.us div.container-right div.services div p, body section.us div.container-right div.products div p { font-weight: normal; font-size: 1.7em; }
+  html section.us div.container-right div.atention div.time span, html section.us div.container-right div.services div.time span, html section.us div.container-right div.products div.time span, body section.us div.container-right div.atention div.time span, body section.us div.container-right div.services div.time span, body section.us div.container-right div.products div.time span { font-size: 1.5em; }
+  html section.us div.container-right div.atention div.time p, html section.us div.container-right div.services div.time p, html section.us div.container-right div.products div.time p, body section.us div.container-right div.atention div.time p, body section.us div.container-right div.services div.time p, body section.us div.container-right div.products div.time p { font-size: 1.7em; }
+  html section.us div.container-right div.services, html section.us div.container-right div.products, body section.us div.container-right div.services, body section.us div.container-right div.products { height: 30%; } }
+
+@media screen and (max-width: 1366px) and (orientation: landscape) { html section.us div.container-left h1, body section.us div.container-left h1 { font-size: 5em; }
+  html section.us div.container-left div p.history, body section.us div.container-left div p.history { font-size: 2em; }
+  html section.us div.container-left div div p, body section.us div.container-left div div p { font-size: 2.5em; }
+  html section.us div.container-left div div a, body section.us div.container-left div div a { font-size: 2.5em; }
+  html section.us div.container-right div.atention, html section.us div.container-right div.services, html section.us div.container-right div.products, body section.us div.container-right div.atention, body section.us div.container-right div.services, body section.us div.container-right div.products { margin: 0; }
+  html section.us div.container-right div.atention h1, html section.us div.container-right div.services h1, html section.us div.container-right div.products h1, body section.us div.container-right div.atention h1, body section.us div.container-right div.services h1, body section.us div.container-right div.products h1 { font-size: 4.5em; }
+  html section.us div.container-right div.atention div p, html section.us div.container-right div.services div p, html section.us div.container-right div.products div p, body section.us div.container-right div.atention div p, body section.us div.container-right div.services div p, body section.us div.container-right div.products div p { font-size: 2.3em; }
+  html section.us div.container-right div.atention div.time span, html section.us div.container-right div.services div.time span, html section.us div.container-right div.products div.time span, body section.us div.container-right div.atention div.time span, body section.us div.container-right div.services div.time span, body section.us div.container-right div.products div.time span { font-size: 1.8em; }
+  html section.us div.container-right div.atention div.time p, html section.us div.container-right div.services div.time p, html section.us div.container-right div.products div.time p, body section.us div.container-right div.atention div.time p, body section.us div.container-right div.services div.time p, body section.us div.container-right div.products div.time p { font-size: 2em; } }
+
+html section.barbers, body section.barbers { position: relative; bottom: 300%; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+
+html section.barbers div, body section.barbers div { display: -webkit-flex; display: -ms-flexbox; display: flex; height: 100%; }
+
+html section.barbers div.container-left, body section.barbers div.container-left { width: 29.6%; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+html section.barbers div.container-left div.sustaint, body section.barbers div.container-left div.sustaint { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; overflow-y: auto; max-height: 80%; }
+
+html section.barbers div.container-left div.sustaint div, body section.barbers div.container-left div.sustaint div { height: auto; min-width: 40%; max-width: 70%; cursor: pointer; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -ms-flex-align: center; align-items: center; transition: 0.3s all; }
+
+html section.barbers div.container-left div.sustaint div h1, body section.barbers div.container-left div.sustaint div h1 { font-size: 5em; font-family: "Bahania"; color: #fff; margin: 0%; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+html section.barbers div.container-left div.sustaint div div p, body section.barbers div.container-left div.sustaint div div p { font-family: "Lato"; color: #fff; font-size: 1.2em; display: -webkit-flex; display: -ms-flexbox; display: flex; margin: 0% 0% 15% 0%; transition: 0.3s all; height: auto; }
+
+html section.barbers div.container-left div.sustaint div div p.hidden, body section.barbers div.container-left div.sustaint div div p.hidden { opacity: 0; font-size: 0; margin: 0%; }
+
+html section.barbers div.container-left div.sustaint div div img, body section.barbers div.container-left div.sustaint div div img { max-width: 100%; height: auto; transition: 0.3s all; }
+
+html section.barbers div.container-left div.sustaint div div img.hidden, body section.barbers div.container-left div.sustaint div div img.hidden { opacity: 0; width: 0%; }
+
+html section.barbers div.container-right, body section.barbers div.container-right { width: 70%; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; border-left: 1px solid grey; }
+
+html section.barbers div.container-right div, body section.barbers div.container-right div { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; }
+
+html section.barbers div.container-right div.detail, body section.barbers div.container-right div.detail { height: 75%; padding: 6% 4% 0% 5%; }
+
+html section.barbers div.container-right div.detail figure, body section.barbers div.container-right div.detail figure { margin: 0; width: 100%; height: auto; }
+
+html section.barbers div.container-right div.detail figure img, body section.barbers div.container-right div.detail figure img { border-radius: 2%; width: 100%; height: auto; }
+
+html section.barbers div.container-right div.preview, body section.barbers div.container-right div.preview { height: 24.7%; transition: transition; padding: 3%; }
+
+html section.barbers div.container-right div.preview ul, body section.barbers div.container-right div.preview ul { width: 100%; height: 100%; white-space: nowrap; overflow-x: auto; overflow-y: hidden; }
+
+html section.barbers div.container-right div.preview ul li, body section.barbers div.container-right div.preview ul li { list-style: none; display: inline-block; width: 17%; height: 100%; }
+
+html section.barbers div.container-right div.preview ul li figure, body section.barbers div.container-right div.preview ul li figure { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 0; width: 100%; height: 100%; }
+
+html section.barbers div.container-right div.preview ul li figure img, body section.barbers div.container-right div.preview ul li figure img { width: 90%; height: auto; max-height: 100%; border-radius: 2%; border: 2px solid #555; cursor: pointer; }
+
+html section.barbers div.container-right div.preview ul li figure img.active, body section.barbers div.container-right div.preview ul li figure img.active { border-color: #fff; }
+
+html section.barbers div.container-right div.preview.active, body section.barbers div.container-right div.preview.active { height: 100%; }
+
+html section.barbers div.container-right div.preview.active ul, body section.barbers div.container-right div.preview.active ul { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-content: flex-start; -ms-flex-line-pack: start; align-content: flex-start; overflow: hidden; white-space: normal; }
+
+html section.barbers div.container-right div.preview.active ul li, body section.barbers div.container-right div.preview.active ul li { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 14.2%; margin-bottom: 1%; }
+
+@media screen and (max-width: 468px) and (orientation: portrait) { html section.barbers, body section.barbers { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+  html section.barbers div.container-left, body section.barbers div.container-left { width: 100%; height: 39.5%; }
+  html section.barbers div.container-left div.sustaint, body section.barbers div.container-left div.sustaint { -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
+  html section.barbers div.container-left div.sustaint div h1, body section.barbers div.container-left div.sustaint div h1 { font-size: 2em; }
+  html section.barbers div.container-left div.sustaint div div, body section.barbers div.container-left div.sustaint div div { position: absolute; right: 10%; top: 5%; max-width: 50%; }
+  html section.barbers div.container-left div.sustaint div div p, body section.barbers div.container-left div.sustaint div div p { font-size: .9em; margin: 3% 0% 5% 0%; transition-property: none; }
+  html section.barbers div.container-left div.sustaint div div img, body section.barbers div.container-left div.sustaint div div img { width: 60%; height: auto; transition-property: none; } }
+
+@media screen and (max-width: 468px) and (orientation: portrait) and (max-width: 320px) { html section.barbers div.container-left div.sustaint div div, body section.barbers div.container-left div.sustaint div div { top: 2%; }
+  html section.barbers div.container-left div.sustaint div div img, body section.barbers div.container-left div.sustaint div div img { width: 50%; } }
+
+@media screen and (max-width: 468px) and (orientation: portrait) { html section.barbers div.container-right, body section.barbers div.container-right { width: 100%; height: 60%; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; border: none; }
+  html section.barbers div.container-right div.detail, body section.barbers div.container-right div.detail { height: auto; padding-top: 2%; }
+  html section.barbers div.container-right div.preview, body section.barbers div.container-right div.preview { height: 40.7%; }
+  html section.barbers div.container-right div.preview ul li, body section.barbers div.container-right div.preview ul li { width: 40%; } }
+
+@media screen and (max-width: 736px) and (orientation: landscape) { html section.barbers div.container-left div.sustaint div h1, body section.barbers div.container-left div.sustaint div h1 { font-size: 1.7em; }
+  html section.barbers div.container-left div.sustaint div div, body section.barbers div.container-left div.sustaint div div { max-width: 80%; }
+  html section.barbers div.container-left div.sustaint div div p, body section.barbers div.container-left div.sustaint div div p { font-size: .8em; margin: 3% 0% 5% 0%; transition-property: none; }
+  html section.barbers div.container-left div.sustaint div div img, body section.barbers div.container-left div.sustaint div div img { width: 60%; height: auto; transition-property: none; }
+  html section.barbers div.container-right, body section.barbers div.container-right { -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
+  html section.barbers div.container-right div.detail, body section.barbers div.container-right div.detail { height: auto; padding-top: 2%; }
+  html section.barbers div.container-right div.preview, body section.barbers div.container-right div.preview { height: 40.7%; }
+  html section.barbers div.container-right div.preview ul li, body section.barbers div.container-right div.preview ul li { width: 40%; } }
+
+@media screen and (max-width: 1024px) and (orientation: portrait) { html section.barbers, body section.barbers { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+  html section.barbers div.container-left, body section.barbers div.container-left { width: 100%; height: 39.5%; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
+  html section.barbers div.container-left div.sustaint, body section.barbers div.container-left div.sustaint { -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; margin-left: 14%; }
+  html section.barbers div.container-left div.sustaint div h1, body section.barbers div.container-left div.sustaint div h1 { font-size: 4em; }
+  html section.barbers div.container-left div.sustaint div div, body section.barbers div.container-left div.sustaint div div { position: absolute; right: 10%; top: 3%; max-width: 50%; }
+  html section.barbers div.container-left div.sustaint div div p, body section.barbers div.container-left div.sustaint div div p { font-size: 1.8em; margin: 3% 0% 5% 0%; transition-property: none; }
+  html section.barbers div.container-left div.sustaint div div img, body section.barbers div.container-left div.sustaint div div img { width: 60%; height: auto; transition-property: none; } }
+
+@media screen and (max-width: 1024px) and (orientation: portrait) and (max-width: 320px) { html section.barbers div.container-left div.sustaint div div, body section.barbers div.container-left div.sustaint div div { top: 2%; }
+  html section.barbers div.container-left div.sustaint div div img, body section.barbers div.container-left div.sustaint div div img { width: 50%; } }
+
+@media screen and (max-width: 1024px) and (orientation: portrait) { html section.barbers div.container-right, body section.barbers div.container-right { width: 100%; height: 60%; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; border: none; }
+  html section.barbers div.container-right div.detail, body section.barbers div.container-right div.detail { height: auto; padding-top: 2%; }
+  html section.barbers div.container-right div.preview, body section.barbers div.container-right div.preview { height: 40.7%; }
+  html section.barbers div.container-right div.preview ul li, body section.barbers div.container-right div.preview ul li { width: 40%; } }
+
+@media screen and (min-width: 768px) and (orientation: landscape) { html section.barbers div.container-left div.sustaint div h1, body section.barbers div.container-left div.sustaint div h1 { font-size: 3.8em; }
+  html section.barbers div.container-left div.sustaint div div p, body section.barbers div.container-left div.sustaint div div p { font-size: 1.7em; }
+  html section.barbers div.container-right, body section.barbers div.container-right { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+  html section.barbers div.container-right div.detail, body section.barbers div.container-right div.detail { height: auto; padding-top: 2%; }
+  html section.barbers div.container-right div.preview, body section.barbers div.container-right div.preview { height: 30.7%; }
+  html section.barbers div.container-right div.preview ul li, body section.barbers div.container-right div.preview ul li { width: 40%; } }
+
+@media screen and (max-width: 1366px) and (orientation: landscape) { html section.barbers div.container-left div.sustaint div h1, body section.barbers div.container-left div.sustaint div h1 { font-size: 5em; }
+  html section.barbers div.container-left div.sustaint div div p, body section.barbers div.container-left div.sustaint div div p { font-size: 2em; } }
+
+html section.info, body section.info { position: relative; bottom: 300%; right: 100%; background-color: black; width: 100%; height: 100%; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+
+html section.info div, body section.info div { display: -webkit-flex; display: -ms-flexbox; display: flex; height: 100%; }
+
+html section.info div.container-left, body section.info div.container-left { width: 50%; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+html section.info div.container-left div, body section.info div.container-left div { width: 80%; max-height: 40%; margin: 7% 0% 0% 0%; }
+
+html section.info div.container-left div iframe, body section.info div.container-left div iframe { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; height: auto; }
+
+html section.info div.container-left div.brands, body section.info div.container-left div.brands { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-content: flex-start; -ms-flex-line-pack: start; align-content: flex-start; height: 40%; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-content: center; -ms-flex-line-pack: center; align-content: center; }
+
+html section.info div.container-left div.brands figure, body section.info div.container-left div.brands figure { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 40%; height: auto; }
+
+html section.info div.container-left div.brands figure img, body section.info div.container-left div.brands figure img { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; height: auto; }
+
+html section.info div.container-right, body section.info div.container-right { width: 49.6%; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+html section.info div.container-right h1, body section.info div.container-right h1 { font-size: 5em; font-family: "Bahania"; color: #fff; margin: 0%; display: -webkit-flex; display: -ms-flexbox; display: flex; margin-top: 7%; }
+
+html section.info div.container-right div.contact, body section.info div.container-right div.contact { width: 100%; height: 50%; color: #fff; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+
+html section.info div.container-right div.contact form, body section.info div.container-right div.contact form { width: 70%; height: 100%; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+html section.info div.container-right div.contact form label, body section.info div.container-right div.contact form label { font-family: "Lato"; display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 1.4em; }
+
+html section.info div.container-right div.contact form input, html section.info div.container-right div.contact form textarea, body section.info div.container-right div.contact form input, body section.info div.container-right div.contact form textarea { display: -webkit-flex; display: -ms-flexbox; display: flex; border: none; border-radius: .3em; height: 8%; }
+
+html section.info div.container-right div.contact form textarea, body section.info div.container-right div.contact form textarea { width: 100%; height: 20%; max-height: 25%; max-width: 99%; }
+
+html section.info div.container-right div.contact form button, body section.info div.container-right div.contact form button { background-color: #fff; border: none; border-radius: .4em; width: 50%; -webkit-align-self: center; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; text-align: center; margin-top: 5%; height: 6%; }
+
+@media screen and (max-width: 468px) and (orientation: portrait) { html section.info, body section.info { -webkit-flex-direction: column-reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  html section.info div.container-left, body section.info div.container-left { width: 80%; height: 29.5%; }
+  html section.info div.container-left div, body section.info div.container-left div { display: none; }
+  html section.info div.container-left div.brands, body section.info div.container-left div.brands { display: -webkit-flex; display: -ms-flexbox; display: flex; max-height: 80%; height: 80%; margin-top: 0%; }
+  html section.info div.container-left div.brands figure, body section.info div.container-left div.brands figure { width: 60%; margin: 0%; }
+  html section.info div.container-right, body section.info div.container-right { width: 80%; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; height: 70%; }
+  html section.info div.container-right h1, body section.info div.container-right h1 { font-size: 3em; margin-top: 0%; }
+  html section.info div.container-right div.contact, body section.info div.container-right div.contact { height: 75%; }
+  html section.info div.container-right div.contact form, body section.info div.container-right div.contact form { width: 90%; }
+  html section.info div.container-right div.contact form label, body section.info div.container-right div.contact form label { font-size: 1em; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+  html section.info div.container-right div.contact form input, body section.info div.container-right div.contact form input { display: -webkit-flex; display: -ms-flexbox; display: flex; }
+  html section.info div.container-right div.contact form textarea, body section.info div.container-right div.contact form textarea { max-height: 15%; display: -webkit-flex; display: -ms-flexbox; display: flex; } }
+
+@media screen and (max-width: 736px) and (orientation: landscape) { html section.info div.container-left, body section.info div.container-left { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+  html section.info div.container-left div, body section.info div.container-left div { display: none; }
+  html section.info div.container-left div.brands, body section.info div.container-left div.brands { display: -webkit-flex; display: -ms-flexbox; display: flex; margin-top: 0%; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; max-height: 70%; height: 70%; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  html section.info div.container-left div.brands figure, body section.info div.container-left div.brands figure { width: 50%; margin: 0%; }
+  html section.info div.container-right, body section.info div.container-right { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+  html section.info div.container-right h1, body section.info div.container-right h1 { font-size: 2em; margin-top: 0%; }
+  html section.info div.container-right div.contact, body section.info div.container-right div.contact { height: 75%; }
+  html section.info div.container-right div.contact form, body section.info div.container-right div.contact form { width: 90%; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  html section.info div.container-right div.contact form label, body section.info div.container-right div.contact form label { font-size: 1em; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 80%; }
+  html section.info div.container-right div.contact form input, body section.info div.container-right div.contact form input { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 80%; }
+  html section.info div.container-right div.contact form textarea, body section.info div.container-right div.contact form textarea { width: 80%; max-height: 15%; display: -webkit-flex; display: -ms-flexbox; display: flex; } }
+
+@media screen and (max-width: 1024px) and (orientation: portrait) { html section.info, body section.info { -webkit-flex-direction: column-reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  html section.info div.container-left, body section.info div.container-left { width: 80%; height: 29.5%; }
+  html section.info div.container-left div, body section.info div.container-left div { display: none; }
+  html section.info div.container-left div.brands, body section.info div.container-left div.brands { display: -webkit-flex; display: -ms-flexbox; display: flex; max-height: 80%; height: 80%; margin-top: 0%; }
+  html section.info div.container-left div.brands figure, body section.info div.container-left div.brands figure { width: 60%; margin: 0%; }
+  html section.info div.container-right, body section.info div.container-right { width: 80%; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; height: 70%; }
+  html section.info div.container-right h1, body section.info div.container-right h1 { font-size: 3em; margin-top: 0%; }
+  html section.info div.container-right div.contact, body section.info div.container-right div.contact { height: 75%; }
+  html section.info div.container-right div.contact form, body section.info div.container-right div.contact form { width: 90%; }
+  html section.info div.container-right div.contact form label, body section.info div.container-right div.contact form label { font-size: 2em; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+  html section.info div.container-right div.contact form input, body section.info div.container-right div.contact form input { display: -webkit-flex; display: -ms-flexbox; display: flex; }
+  html section.info div.container-right div.contact form textarea, body section.info div.container-right div.contact form textarea { max-height: 15%; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+  html section.info div.container-right div.contact form button, body section.info div.container-right div.contact form button { font-size: 1.5em; } }
+
+@media screen and (min-width: 768px) and (orientation: landscape) { html section.info div.container-right div.contact, body section.info div.container-right div.contact { height: 75%; }
+  html section.info div.container-right div.contact form, body section.info div.container-right div.contact form { width: 90%; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  html section.info div.container-right div.contact form label, body section.info div.container-right div.contact form label { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 80%; }
+  html section.info div.container-right div.contact form input, body section.info div.container-right div.contact form input { display: -webkit-flex; display: -ms-flexbox; display: flex; width: 80%; }
+  html section.info div.container-right div.contact form textarea, body section.info div.container-right div.contact form textarea { width: 80%; max-height: 15%; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+  html section.info div.container-right div.contact form button, body section.info div.container-right div.contact form button { font-size: 1.3em; } }
+
+@media screen and (max-width: 1366px) and (orientation: landscape) { html section.info div.container-right div.contact form label, body section.info div.container-right div.contact form label { font-size: 2em; } }
