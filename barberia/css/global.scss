@@ -14,9 +14,9 @@ html,body{
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+		margin: 0 auto;
 		&.main{
 			// display: none;
-			margin: 0 auto;
 			div.top, div.bottom{
 				z-index: 2;
 				max-width: 1440px;
@@ -787,6 +787,7 @@ html,body{
 						height: 39.5%;
 						div.sustaint{
 							align-items: flex-start;
+							width: 90%;
 							div{
 								h1{
 									font-size: 2em;
