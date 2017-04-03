@@ -16,6 +16,7 @@ html,body{
 		flex-direction: column;
 		&.main{
 			// display: none;
+			margin: 0 auto;
 			div.top, div.bottom{
 				z-index: 2;
 				max-width: 1440px;
@@ -442,7 +443,7 @@ html,body{
 					}
 				}
 			}
-			@media screen and (max-width: 1024px) and (min-width: 469px) and (orientation: portrait) {
+			@media screen and (min-width: 469px) and (max-width: 1024px) and (orientation: portrait) {
 				flex-direction: column;
 				div{
 					&.container-left, &.container-right{
@@ -593,7 +594,7 @@ html,body{
 					}
 				}
 			}
-			@media screen and (max-width: 1366px) and (orientation: landscape) {
+			@media screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
 				div{
 					&.container-left{
 						h1{
@@ -880,7 +881,7 @@ html,body{
 					}
 				}
 			}
-			@media screen and (max-width: 1024px) and (orientation: portrait) {
+			@media screen and (min-width: 469px) and (max-width: 1024px) and (orientation: portrait) {
 				flex-direction: column;
 				div{
 					&.container-left{
@@ -976,7 +977,7 @@ html,body{
 					}
 				}
 			}
-			@media screen and (max-width: 1366px) and (orientation: landscape) {
+			@media screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
 				div{
 					&.container-left{
 						div.sustaint{
@@ -1247,7 +1248,7 @@ html,body{
 					}
 				}
 			}
-			@media screen and (max-width: 1024px) and (orientation: portrait) {
+			@media screen and (min-width: 469px) and (max-width: 1024px) and (orientation: portrait) {
 				flex-direction: column-reverse;
 				align-items: center;
 				div{
@@ -1332,7 +1333,7 @@ html,body{
 					}
 				}
 			}
-			@media screen and (max-width: 1366px) and (orientation: landscape) {
+			@media screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
 				div{
 					&.container-right{
 						div{

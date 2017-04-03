@@ -32,116 +32,118 @@ html, body {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
-    html section.main div.top, html section.main div.bottom, body section.main div.top, body section.main div.bottom {
-      z-index: 2;
-      max-width: 1440px;
-      width: 100%;
-      height: 100%;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
-      html section.main div.top div, html section.main div.bottom div, body section.main div.top div, body section.main div.bottom div {
-        box-shadow: 0px 0px 200px 200px rgba(0, 0, 0, 0.7) inset;
-        cursor: pointer;
-        height: auto;
+    html section.main, body section.main {
+      margin: 0 auto; }
+      html section.main div.top, html section.main div.bottom, body section.main div.top, body section.main div.bottom {
+        z-index: 2;
+        max-width: 1440px;
         width: 100%;
+        height: 100%;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        background-position: center; }
-        html section.main div.top div h1, html section.main div.bottom div h1, body section.main div.top div h1, body section.main div.bottom div h1 {
-          font-size: 5em;
-          font-family: "Bahania";
+        display: flex; }
+        html section.main div.top div, html section.main div.bottom div, body section.main div.top div, body section.main div.bottom div {
+          box-shadow: 0px 0px 200px 200px rgba(0, 0, 0, 0.7) inset;
+          cursor: pointer;
+          height: auto;
+          width: 100%;
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
-          color: #fff; }
-        html section.main div.top div p, html section.main div.bottom div p, body section.main div.top div p, body section.main div.bottom div p {
-          display: inline-block;
-          font-family: "Lato";
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          color: #fff;
-          font-size: 1.5em; }
-        html section.main div.top div.img1, html section.main div.bottom div.img1, body section.main div.top div.img1, body section.main div.bottom div.img1 {
-          background-image: url("../assets/images/demo/main-1.jpg"); }
-          html section.main div.top div.img1 h1, html section.main div.bottom div.img1 h1, body section.main div.top div.img1 h1, body section.main div.bottom div.img1 h1 {
-            margin: 3% 0% 0% 3%; }
-          html section.main div.top div.img1 p, html section.main div.bottom div.img1 p, body section.main div.top div.img1 p, body section.main div.bottom div.img1 p {
-            margin: 0% 0% 0% 3%; }
-        html section.main div.top div.img2, html section.main div.bottom div.img2, body section.main div.top div.img2, body section.main div.bottom div.img2 {
-          background-image: url("../assets/images/demo/main-2.jpg");
-          -webkit-align-items: flex-end;
-          -ms-flex-align: end;
-          align-items: flex-end; }
-          html section.main div.top div.img2 h1, html section.main div.bottom div.img2 h1, body section.main div.top div.img2 h1, body section.main div.bottom div.img2 h1 {
-            margin: 3% 3% 0% 0%; }
-          html section.main div.top div.img2 p, html section.main div.bottom div.img2 p, body section.main div.top div.img2 p, body section.main div.bottom div.img2 p {
-            margin: 0% 3% 0% 0%; }
-        html section.main div.top div.img3, html section.main div.bottom div.img3, body section.main div.top div.img3, body section.main div.bottom div.img3 {
-          background-image: url("../assets/images/demo/main-3.jpg");
-          -webkit-flex-direction: column-reverse;
-          -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse; }
-          html section.main div.top div.img3 h1, html section.main div.bottom div.img3 h1, body section.main div.top div.img3 h1, body section.main div.bottom div.img3 h1 {
-            margin: 0% 0% 3% 3%; }
-          html section.main div.top div.img3 p, html section.main div.bottom div.img3 p, body section.main div.top div.img3 p, body section.main div.bottom div.img3 p {
-            margin: 0% 0% 0% 3%; }
-        html section.main div.top div.img4, html section.main div.bottom div.img4, body section.main div.top div.img4, body section.main div.bottom div.img4 {
-          background-image: url("../assets/images/demo/main-4.jpg");
-          -webkit-flex-direction: column-reverse;
-          -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-          -webkit-align-items: flex-end;
-          -ms-flex-align: end;
-          align-items: flex-end; }
-          html section.main div.top div.img4 h1, html section.main div.bottom div.img4 h1, body section.main div.top div.img4 h1, body section.main div.bottom div.img4 h1 {
-            margin: 0% 3% 3% 0%; }
-          html section.main div.top div.img4 p, html section.main div.bottom div.img4 p, body section.main div.top div.img4 p, body section.main div.bottom div.img4 p {
-            margin: 0% 3% 0% 0%; }
-    html section.main aside, body section.main aside {
-      width: 100%;
-      height: 100%;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      position: absolute;
-      top: 0%; }
-      html section.main aside figure, body section.main aside figure {
-        z-index: 3;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          background-position: center; }
+          html section.main div.top div h1, html section.main div.bottom div h1, body section.main div.top div h1, body section.main div.bottom div h1 {
+            font-size: 5em;
+            font-family: "Bahania";
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            color: #fff; }
+          html section.main div.top div p, html section.main div.bottom div p, body section.main div.top div p, body section.main div.bottom div p {
+            display: inline-block;
+            font-family: "Lato";
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            color: #fff;
+            font-size: 1.5em; }
+          html section.main div.top div.img1, html section.main div.bottom div.img1, body section.main div.top div.img1, body section.main div.bottom div.img1 {
+            background-image: url("../assets/images/demo/main-1.jpg"); }
+            html section.main div.top div.img1 h1, html section.main div.bottom div.img1 h1, body section.main div.top div.img1 h1, body section.main div.bottom div.img1 h1 {
+              margin: 3% 0% 0% 3%; }
+            html section.main div.top div.img1 p, html section.main div.bottom div.img1 p, body section.main div.top div.img1 p, body section.main div.bottom div.img1 p {
+              margin: 0% 0% 0% 3%; }
+          html section.main div.top div.img2, html section.main div.bottom div.img2, body section.main div.top div.img2, body section.main div.bottom div.img2 {
+            background-image: url("../assets/images/demo/main-2.jpg");
+            -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+            align-items: flex-end; }
+            html section.main div.top div.img2 h1, html section.main div.bottom div.img2 h1, body section.main div.top div.img2 h1, body section.main div.bottom div.img2 h1 {
+              margin: 3% 3% 0% 0%; }
+            html section.main div.top div.img2 p, html section.main div.bottom div.img2 p, body section.main div.top div.img2 p, body section.main div.bottom div.img2 p {
+              margin: 0% 3% 0% 0%; }
+          html section.main div.top div.img3, html section.main div.bottom div.img3, body section.main div.top div.img3, body section.main div.bottom div.img3 {
+            background-image: url("../assets/images/demo/main-3.jpg");
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+            html section.main div.top div.img3 h1, html section.main div.bottom div.img3 h1, body section.main div.top div.img3 h1, body section.main div.bottom div.img3 h1 {
+              margin: 0% 0% 3% 3%; }
+            html section.main div.top div.img3 p, html section.main div.bottom div.img3 p, body section.main div.top div.img3 p, body section.main div.bottom div.img3 p {
+              margin: 0% 0% 0% 3%; }
+          html section.main div.top div.img4, html section.main div.bottom div.img4, body section.main div.top div.img4, body section.main div.bottom div.img4 {
+            background-image: url("../assets/images/demo/main-4.jpg");
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+            align-items: flex-end; }
+            html section.main div.top div.img4 h1, html section.main div.bottom div.img4 h1, body section.main div.top div.img4 h1, body section.main div.bottom div.img4 h1 {
+              margin: 0% 3% 3% 0%; }
+            html section.main div.top div.img4 p, html section.main div.bottom div.img4 p, body section.main div.top div.img4 p, body section.main div.bottom div.img4 p {
+              margin: 0% 3% 0% 0%; }
+      html section.main aside, body section.main aside {
+        width: 100%;
+        height: 100%;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        width: 35%;
-        margin: 0 auto;
         -webkit-align-items: center;
         -ms-flex-align: center;
-        align-items: center; }
-        html section.main aside figure img, body section.main aside figure img {
-          border-radius: 50% 40% 50% 50%;
-          height: auto;
-          width: 100%; }
-    @media screen and (max-width: 468px) and (orientation: portrait) {
-      html section.main div.top div h1, html section.main div.bottom div h1, body section.main div.top div h1, body section.main div.bottom div h1 {
-        font-size: 2em; }
-      html section.main div.top div p, html section.main div.bottom div p, body section.main div.top div p, body section.main div.bottom div p {
-        font-size: .8em; }
-      html section.main aside figure, body section.main aside figure {
-        width: 65%; } }
-    @media screen and (max-width: 736px) and (orientation: landscape) {
-      html section.main div.top div h1, html section.main div.bottom div h1, body section.main div.top div h1, body section.main div.bottom div h1 {
-        font-size: 2em; }
-      html section.main div.top div p, html section.main div.bottom div p, body section.main div.top div p, body section.main div.bottom div p {
-        font-size: .8em; }
-      html section.main aside figure, body section.main aside figure {
-        width: 40%; } }
+        align-items: center;
+        position: absolute;
+        top: 0%; }
+        html section.main aside figure, body section.main aside figure {
+          z-index: 3;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          width: 35%;
+          margin: 0 auto;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          html section.main aside figure img, body section.main aside figure img {
+            border-radius: 50% 40% 50% 50%;
+            height: auto;
+            width: 100%; }
+      @media screen and (max-width: 468px) and (orientation: portrait) {
+        html section.main div.top div h1, html section.main div.bottom div h1, body section.main div.top div h1, body section.main div.bottom div h1 {
+          font-size: 2em; }
+        html section.main div.top div p, html section.main div.bottom div p, body section.main div.top div p, body section.main div.bottom div p {
+          font-size: .8em; }
+        html section.main aside figure, body section.main aside figure {
+          width: 65%; } }
+      @media screen and (max-width: 736px) and (orientation: landscape) {
+        html section.main div.top div h1, html section.main div.bottom div h1, body section.main div.top div h1, body section.main div.bottom div h1 {
+          font-size: 2em; }
+        html section.main div.top div p, html section.main div.bottom div p, body section.main div.top div p, body section.main div.bottom div p {
+          font-size: .8em; }
+        html section.main aside figure, body section.main aside figure {
+          width: 40%; } }
     html section.us, body section.us {
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
@@ -402,7 +404,7 @@ html, body {
                 font-size: .8em; }
           html section.us div.container-right div.services, html section.us div.container-right div.products, body section.us div.container-right div.services, body section.us div.container-right div.products {
             height: 30%; } }
-      @media screen and (max-width: 1024px) and (min-width: 469px) and (orientation: portrait) {
+      @media screen and (min-width: 469px) and (max-width: 1024px) and (orientation: portrait) {
         html section.us, body section.us {
           -webkit-flex-direction: column;
           -ms-flex-direction: column;
@@ -509,7 +511,7 @@ html, body {
                 font-size: 1.7em; }
           html section.us div.container-right div.services, html section.us div.container-right div.products, body section.us div.container-right div.services, body section.us div.container-right div.products {
             height: 30%; } }
-      @media screen and (max-width: 1366px) and (orientation: landscape) {
+      @media screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
         html section.us div.container-left h1, body section.us div.container-left h1 {
           font-size: 5em; }
         html section.us div.container-left div p.history, body section.us div.container-left div p.history {
@@ -750,7 +752,7 @@ html, body {
             height: 40.7%; }
             html section.barbers div.container-right div.preview ul li, body section.barbers div.container-right div.preview ul li {
               width: 40%; } }
-      @media screen and (max-width: 1024px) and (orientation: portrait) {
+      @media screen and (min-width: 469px) and (max-width: 1024px) and (orientation: portrait) {
         html section.barbers, body section.barbers {
           -webkit-flex-direction: column;
           -ms-flex-direction: column;
@@ -781,12 +783,12 @@ html, body {
                   width: 60%;
                   height: auto;
                   transition-property: none; } }
-        @media screen and (max-width: 1024px) and (orientation: portrait) and (max-width: 320px) {
+        @media screen and (min-width: 469px) and (max-width: 1024px) and (orientation: portrait) and (max-width: 320px) {
           html section.barbers div.container-left div.sustaint div div, body section.barbers div.container-left div.sustaint div div {
             top: 2%; }
             html section.barbers div.container-left div.sustaint div div img, body section.barbers div.container-left div.sustaint div div img {
               width: 50%; } }
-      @media screen and (max-width: 1024px) and (orientation: portrait) {
+      @media screen and (min-width: 469px) and (max-width: 1024px) and (orientation: portrait) {
           html section.barbers div.container-right, body section.barbers div.container-right {
             width: 100%;
             height: 60%;
@@ -817,7 +819,7 @@ html, body {
             height: 30.7%; }
             html section.barbers div.container-right div.preview ul li, body section.barbers div.container-right div.preview ul li {
               width: 40%; } }
-      @media screen and (max-width: 1366px) and (orientation: landscape) {
+      @media screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
         html section.barbers div.container-left div.sustaint div h1, body section.barbers div.container-left div.sustaint div h1 {
           font-size: 5em; }
         html section.barbers div.container-left div.sustaint div div p, body section.barbers div.container-left div.sustaint div div p {
@@ -1054,7 +1056,7 @@ html, body {
                 display: -webkit-flex;
                 display: -ms-flexbox;
                 display: flex; } }
-      @media screen and (max-width: 1024px) and (orientation: portrait) {
+      @media screen and (min-width: 469px) and (max-width: 1024px) and (orientation: portrait) {
         html section.info, body section.info {
           -webkit-flex-direction: column-reverse;
           -ms-flex-direction: column-reverse;
@@ -1132,6 +1134,6 @@ html, body {
               display: flex; }
             html section.info div.container-right div.contact form button, body section.info div.container-right div.contact form button {
               font-size: 1.3em; } }
-      @media screen and (max-width: 1366px) and (orientation: landscape) {
+      @media screen and (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
         html section.info div.container-right div.contact form label, body section.info div.container-right div.contact form label {
           font-size: 2em; } }
